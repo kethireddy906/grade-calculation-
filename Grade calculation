@@ -1,0 +1,50 @@
+# input sub, marks /
+# grades /  check 
+# average /  check 
+# grades the averages  /
+
+m= input ("subject:")
+mm=float(input("marks:"))
+Print()
+
+
+e= input ("subject:")
+em=float (input(" marks:"))
+Print()
+
+
+s= input ("subject:")
+sm=float(input("marks:"))
+Print()
+
+def grade(marks,sub):
+if float (marks)>=90:
+   Print(sub+"\nA+")
+elif 80<=float(marks)<90:
+   Print(sub+"\nB+")
+elif 70<=float(marks)<80:
+   Print(sub+"\nC+")
+elif 60<=float(marks)<70:
+   Print(sub+"\nD+")
+elif 60>float(marks):
+   Print("sorry you failed the subject,:(")
+grade(mm,m)
+
+grade(em,e)
+
+grade(sm,s)
+
+
+avg=(float(mm)+float(em)+float(sm)/3)
+Print("your total score average:",avg)
+
+if float (avg)>=90:
+   Print("average grade:\nA+")
+elif 80<=float(avg)<90:
+   Print("average grade:\nB+")
+elif 70<=float(avg)<80:
+   Print("average grade:\nC+")
+elif 60<=float(avg)<70:
+   Print("average grade:\nD+")
+elif 60>float(avg):
+   Print("sorry you failed the semester,:(")
